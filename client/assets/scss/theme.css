@@ -1,0 +1,56 @@
+.one{
+  --body-bg: rgba(250, 248, 235, 0.7);
+  --box-bg: rgba(255, 255, 255, 1);
+  --box-bg-active: rgba(255, 255, 255, 1);
+  --navbar-header-bg: rgba(247, 247, 247, 1);
+  --text-color: #555;
+  --navbar-header-text-color: #555;
+  --navbar-header-text-color-active: #333;
+  --input-bg: rgba(0, 0, 0, 0.06);
+  --input-btn-bg: rgba(0, 0, 0, 0.15);
+  --href-color: #0ca7f8;
+  --border-color: #eee;
+  --series-title-bg: linear-gradient(to left, #fff 0%, #fff 80%, transparent 100%);
+}
+.two{
+  --body-bg: rgba(121, 207, 223, 0.7);
+  --box-bg: rgba(247, 247, 247, 1);
+  --box-bg-active: rgba(255, 255, 255, 1);
+  --navbar-header-bg: rgba(247, 247, 247, 1);
+  --text-color: #555;
+  --navbar-header-text-color: #555;
+  --navbar-header-text-color-active: #333;
+  --input-bg: rgba(0, 0, 0, 0.06);
+  --input-btn-bg: rgba(0, 0, 0, 0.15);
+  --href-color: #0ca7f8;
+  --border-color: #bbb;
+  --series-title-bg: linear-gradient(to left, #9fdbe6 0%, #9fdbe6 80%, transparent 100%);
+}
+.three{
+  --body-bg: rgba(255, 221, 147, 0.7);
+  --box-bg: rgb(226, 201, 137);
+  --box-bg-active: rgba(255, 255, 255, 1);
+  --navbar-header-bg: rgb(226, 201, 137);
+  --text-color: #555;
+  --navbar-header-text-color: #555;
+  --navbar-header-text-color-active: #333;
+  --input-bg: rgba(0, 0, 0, 0.06);
+  --input-btn-bg: rgba(0, 0, 0, 0.15);
+  --href-color: #0ca7f8;
+  --border-color: #eee;
+  --series-title-bg: linear-gradient(to left, #fde4b0 0%, #fde4b0 80%, transparent 100%);
+}
+.fore{
+  --body-bg: rgba(41, 38, 38, 0.8);
+  --box-bg: rgb(63, 58, 58);
+  --box-bg-active: rgb(51, 49, 49);
+  --navbar-header-bg: rgb(63, 58, 58);
+  --text-color: #fff;
+  --navbar-header-text-color: #fff;
+  --navbar-header-text-color-active: #fff;
+  --input-bg: rgba(0, 0, 0, 0.06);
+  --input-btn-bg: rgba(0, 0, 0, 0.15);
+  --href-color: #3598db;
+  --border-color: #555;
+  --series-title-bg: linear-gradient(to left, #555252 0%, #555252 80%, transparent 100%);
+}

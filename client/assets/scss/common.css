@@ -1,0 +1,47 @@
+@font-face{
+  font-family: 'stawix';
+  src: url('~assets/fonts/stawix.otf');
+}
+@font-face{
+  font-family: 'guevara';
+  src: url('~assets/fonts/guevara.ttf');
+}
+
+.clearfix{
+  zoom: 0;
+}
+.clearfix::after{
+  content: ' ';
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
+
+html,body,
+p,span,label,
+h1,h2,h3,h4,h5,h6{
+  font-family: 'stawix';
+}
+
+.translate-enter-active, .translate-leave-active {
+  transition: all .2s;
+}
+.translate-enter, .translate-leave-to {
+  opacity: 0;
+  transform: translateY(30px);
+}
+.slidedown-enter-active, .slidedown-leave-active {
+  transition: all .2s;
+}
+.slidedown-enter, .slidedown-leave-to {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+
+.layout-enter-active, .layout-leave-active {
+  transition: all .2s;
+}
+.layout-enter, .layout-leave-to {
+  opacity: 0;
+}

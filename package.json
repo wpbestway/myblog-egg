@@ -1,0 +1,58 @@
+{
+  "name": "blog-egg",
+  "version": "0.0.1",
+  "description": "blog project, egg + nuxt + vue",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged --allow-empty"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add -A"
+    ],
+    "*.vue": [
+      "eslint --fix",
+      "git add -A"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wpbestway/blog.git"
+  },
+  "keywords": [
+    "egg",
+    "nuxt",
+    "vue",
+    "docker",
+    "jenkins"
+  ],
+  "author": "wp_best@163.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wpbestway/blog/issues"
+  },
+  "homepage": "https://github.com/wpbestway/blog#readme",
+  "devDependencies": {
+    "eslint": "^5.13.0",
+    "eslint-config-egg": "^7.1.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-html": "4.0.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.2.0",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "eslint-plugin-vue": "^6.2.2",
+    "lint-staged": "^10.1.6"
+  },
+  "dependencies": {
+    "husky": "^4.2.5"
+  }
+}
