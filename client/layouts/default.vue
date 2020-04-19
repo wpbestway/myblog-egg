@@ -86,8 +86,8 @@
 import {
   IsPC
 } from '@/utils'
-import tagContent from '~/components/tag-content';
-import fixBar from '~/components/fix-bar';
+import tagContent from '~/components/tag-content'
+import fixBar from '~/components/fix-bar'
 import classifyContent from '~/components/classify-content'
 import searchContent from '~/components/search-content'
 import autoScroll from '~/components/auto-scroll'
