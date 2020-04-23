@@ -2,6 +2,9 @@
 
 'use strict';
 
+const fs = require('fs')
+const path = require('path')
+
 /**
  * @param {Egg.EggAppInfo} appInfo app info
  */
@@ -13,7 +16,14 @@ module.exports = appInfo => {
   const config = exports = {};
 
   // use for cookie sign key, should change to your own and keep security
-  config.keys = appInfo.name + '_1586880460203_1920';
+  config.keys = "fs.readFileSync(path.join(__dirname, './secret.key'))";
+
+  // add your middleware config here
+  config.middleware = ['validate'];
+
+  config.jwt = {
+    secret: fs.readFileSync(path.join(__dirname, './secret.key'))
+  }
 
   // add your middleware config here
   config.middleware = [];
@@ -29,7 +39,7 @@ module.exports = appInfo => {
   // csrf set
   config.security = {
     csrf: {
-      ignore: '/client',
+      ignore: ['/client', '/admin']
     }
   };
 

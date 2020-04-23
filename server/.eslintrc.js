@@ -21,6 +21,7 @@ module.exports = {
     'spaced-comment': ['error', 'always'],
     'comma-dangle': ["error", "never"],
     'semi': ["error", "never"],
+    'no-return-await': 'off',
 
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'

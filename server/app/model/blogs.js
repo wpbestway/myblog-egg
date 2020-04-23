@@ -1,7 +1,7 @@
 module.exports = app => {
-  const mongoose = app.mongoose;
-  const Schema = mongoose.Schema;
- 
+  const mongoose = app.mongoose
+  const Schema = mongoose.Schema
+
   const blogsSchema = new Schema({
     title: {
       type: String
@@ -12,17 +12,14 @@ module.exports = app => {
     tag: {
       type: String
     },
-    tagName: {
-      type: String
+    tag_id: {
+      type: Schema.Types.ObjectId
     },
-    classify: {
-      type: String
+    classify_id: {
+      type: Schema.Types.ObjectId
     },
-    classifyName: {
-      type: String
-    },
-    series: {
-      type: String
+    series_id: {
+      type: Schema.Types.ObjectId
     },
     content: {
       type: String
@@ -43,7 +40,7 @@ module.exports = app => {
     }
   }, {
     versionKey: false
-  });
- 
-  return mongoose.model('Blogs', blogsSchema, 'blogs');
+  })
+
+  return mongoose.model('Blogs', blogsSchema, 'blogs')
 }
